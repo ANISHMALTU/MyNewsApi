@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Link} from"react-router-dom";
+// import {Link} from"react-router-dom";
 class Navbar extends Component {
   render() {
     const { togglemode } = this.props;
@@ -8,7 +8,8 @@ class Navbar extends Component {
       <div>
         <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark ">
           <div className="container-fluid ">
-            <Link className="navbar-brand" to="/Taza Khabar">Taza Khabar</Link>
+            {/* <Link className="navbar-brand" to="/Taza Khabar">Taza Khabar</Link> */}
+            <a className="navbar-brand" href="/Taza Khabar">Taza Khabar</a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -16,7 +17,8 @@ class Navbar extends Component {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <Link className="nav-link active" aria-current="page" to="/Taza Khabar">Home</Link>
+                  {/* <Link className="nav-link active" aria-current="page" to="/Taza Khabar">Home</Link> */}
+                  <a className="nav-link active" aria-current="page" href="/Taza Khabar">Home</a>
                 </li>
                 
                 {/* <li className="nav-item">

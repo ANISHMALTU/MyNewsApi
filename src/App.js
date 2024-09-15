@@ -2,7 +2,7 @@ import "./App.css";
 import React, { Component } from "react";
 import Navbar from "./component/Navbar";
 import News from "./component/News";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
 export default class App extends Component {
   constructor(props) {
@@ -37,7 +37,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Router>
+        {/* <Router> */}
           <Navbar togglemode={this.togglemode} />
           <LoadingBar
             color="#f11946"
@@ -45,7 +45,7 @@ export default class App extends Component {
             progress={this.state.progress}
           />
           <News setProgress =  {this.setProgress}  pageSize={this.pageSize} />
-          <Routes>
+          {/* <Routes>
             <Route
               exact
               path="/business"
@@ -74,7 +74,7 @@ export default class App extends Component {
               element={<News setProgress =  {this.setProgress}  pageSize={this.pageSize} category="sports" />}
             />
           </Routes>
-        </Router>
+        </Router> */}
       </div>
     );
   }
